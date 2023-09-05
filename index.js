@@ -42,7 +42,7 @@ app.use(
       autoRemove: "disabled",
     }),
     function(err) {
-      if (err) console.log("Error in creating mongo setup for session cookies");
+      if (err) console.log("Error in the creating mongo setup for session cookies");
       else console.log("connected to mongo for session cookie storage");
     },
   })
@@ -61,9 +61,9 @@ app.use("/", require("./routes"));
 //listen on PORT
 app.listen(PORT, function (err) {
   if (err) {
-    console.log(`Error in starting server: ${err}`);
+    console.log(`Error in the starting server: ${err}`);
     return;
   } else {
-    console.log(`Server successfully listening at port ${PORT}`);
+    console.log(`Server is successfully listening at port ${PORT}`);
   }
 });

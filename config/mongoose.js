@@ -8,7 +8,7 @@ const db = mongoose.connection;
 
 //if error
 db.on("error", function (err) {
-  console.log(`Error in connecting to DB: ${err}`);
+  console.log(`Error in the connecting to DB: ${err}`);
 });
 
 //successfully conneted
